@@ -1,0 +1,22 @@
+.weather-container{
+    text-align: center;
+    background-color: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.weather-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather_description{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.weather-temp{
+    font-size: 22px;
+    font-weight: bold;
+}
