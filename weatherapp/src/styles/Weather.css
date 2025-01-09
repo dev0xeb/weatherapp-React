@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:  white; */
+}
+
 .weather-container{
     text-align: center;
     background-color: none;

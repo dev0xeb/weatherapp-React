@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    background-color: rgb(177, 212, 233);
+}
+
+.app{
+    min-height: 100vh;
+    display: grid;
+    /* background: #e2d4ff; */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header .logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+input{
+    height: 35px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: initial;
+    color: black;
+    font-weight: 400px;
+    font-size: 16px;
+    border: 2px solid rgb(240, 240, 240);
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.dropdown{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+}
+
+.header nav button{
+    width: 80px;
+    margin-left: -65px;
+    height: 35px;
+    background-color: cyan;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.date{
+    font-weight: bold;
+    position: absolute;
+    right: 50px;
+}
+
+hr{
+    border: 1px solid rgb(117, 113, 113);
+}
+
+@keyframes popOut{
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.weather-card{
+    text-align: center;
+    margin-top: 50px;
+    justify-content: space-around;
+    animation: popOut 2s ease-out, pulse 2.5s ease-in-out infinite;
+}
+
+.weather-card h2{
+    font-size: 70px;
+}
+
+.weather-card p{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
